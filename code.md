@@ -1,5 +1,5 @@
 # Sample Markdown
 
 ```
-curl example.com
+curl -i example.com
 ```
