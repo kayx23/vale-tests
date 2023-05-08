@@ -1,7 +1,5 @@
 # Sample Markdown
 
 ```
-curl -i example.com  
+curl example.com -X PUT -d
 ```
-
-This is a l4.

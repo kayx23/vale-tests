@@ -3,4 +3,4 @@ message: "detect '%s' in code"
 level: error
 scope: raw
 tokens:
-  - curl  # test
+  - 'curl\s+.*-X\s+PUT\b'
