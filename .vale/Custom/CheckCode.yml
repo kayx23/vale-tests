@@ -1,6 +1,6 @@
 extends: existence
- message: "detect token in code"
- level: error
- scope: raw
- tokens:
-   - curl  # test
+message: "detect token in code"
+level: error
+scope: raw
+tokens:
+  - curl  # test
