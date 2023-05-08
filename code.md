@@ -1,5 +1,5 @@
 # Sample Markdown
 
 ```
-curl -i "http://127.0.0.1:9180/dadjoke/admin/routes/quickstart-route" -X PUT -d
+curl "http://example.com/apisix/admin/routes/12345" -H "Content-Type: application/json" -X PUT -d '{"key": "value"}'
 ```
