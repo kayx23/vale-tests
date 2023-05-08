@@ -2,7 +2,5 @@ extends: substitution
 message: "Use '%s' instead of '%s'." due to differences in network models.
 level: suggestion
 ignorecase: true
-action:
-  name: replace
 swap:
   l4: transport layer
