@@ -3,4 +3,4 @@ message: "detect '%s' in code"
 level: error
 scope: raw
 tokens:
-  - 'curl\s+.*-X\s+PUT\b.*\/dadjoke\/admin\/routes\/\w+$'
+  - 'curl\s+.*-X\s+PUT\b.*\/dadjoke\/admin\/routes\/\S+'
