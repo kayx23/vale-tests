@@ -1,0 +1,24 @@
+name: reviewdog
+on: [pull_request]
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: get-changed-files
+        id: files
+        uses: masesgroup/retrieve-changed-files@v2
+        with:
+          format: 'csv'
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: reviewdog
+        if: contains(${{ steps.files.outputs.added_modified }}, '.md')
+        uses: errata-ai/vale-action@reviewdog
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          separator: ","
+          files: ${{ steps.files.outputs.added_modified }}
+          reporter: github-check
+          fail_on_error: true
