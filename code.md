@@ -1,5 +1,5 @@
 # Sample Markdown
 
 ```
-curl example.com -X PUT -d
+curl -i example.com -X PUT -H 'Content-Type: application/json' -d '{"key": "value"}'
 ```
