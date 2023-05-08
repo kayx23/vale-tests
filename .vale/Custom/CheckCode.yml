@@ -1,5 +1,5 @@
 extends: existence
-message: "detect token in code"
+message: "detect '%s' in code"
 level: error
 scope: raw
 tokens:
