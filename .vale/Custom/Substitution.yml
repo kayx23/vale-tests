@@ -5,5 +5,4 @@ ignorecase: true
 action:
   name: replace
 swap:
-  transport layer: l4
-  application layer: l7
+  l4: transport layer
