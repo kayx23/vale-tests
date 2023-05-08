@@ -1,5 +1,5 @@
 extends: existence
- message: "Found '%s' in code!""
+ message: "Found '%s' in code!"
  level: error
  scope: raw
  tokens:
